@@ -19,6 +19,7 @@
   "homepage": "https://github.com/trevorjacklitch123/restful-API-node#readme",
   "dependencies": {
     "express": "^4.16.4",
+    "express-subdomain": "^1.0.5",
     "nodemon": "^1.18.9"
   }
 }
