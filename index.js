@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
     res.send("Landing page");
 });
 
-// Default custom 404 Page
+// 404 Page
 app.get("*", (req, res) => {
     res.send("404 Error");
 });
