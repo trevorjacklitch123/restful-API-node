@@ -2,7 +2,7 @@ let express = require("express");
 let router = express.Router();
 
 const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://trevorjacklitch123:m5dfEsM8f32ffZZ@rest-api-cluster-3goja.mongodb.net/test?retryWrites=true";
+const uri = "mongodb+srv://trevorjacklitch123:m5dfEsM8f32ffZZ@rest-api-cluster-3goja.mongodb.net/test?retryWrites=true"; // Shouldn't upload in production code
 const client = new MongoClient(uri, { useNewUrlParser: true });
 client.connect(err => {
   const collection = client.db("REST-API-DB").collection("REST-API-COLLECTION");
