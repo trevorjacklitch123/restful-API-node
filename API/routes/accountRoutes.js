@@ -62,4 +62,19 @@ router.get('/:accountId', (req, res) => {
         });
 });
 
+router.delete('/:accountId', (req, res) => {
+    const accountId = req.params.accountId;
+    Account.remove({_id: accountId})
+        .exec()
+        .then(result => {
+            res.status(200).json(result);
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json({
+                Error: err
+            });
+        });
+});
+
 module.exports = router;
